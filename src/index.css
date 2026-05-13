@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --bg-color: #080808;
+    --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
+    --accent-primary: #00BFFF;
+    --accent-secondary: #1E90FF;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+
+    font-family: 'Outfit', 'Samsung Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #00BFFF, #1E90FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Custom hero image container styling that is tricky with standard tailwind */
+  .hero-image-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: 500px;
+    background: #111;
+    border: 12px solid #222;
+    /* Thick, elegant dark grey border */
+    border-radius: 40px;
+    /* Modern rounded corners */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 191, 255, 0.35);
+    /* Bright Cyan ambient glow */
+    margin: 0 auto;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero-image-box:hover {
+    transform: translateY(-10px);
+  }
+
+  .hero-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+}
