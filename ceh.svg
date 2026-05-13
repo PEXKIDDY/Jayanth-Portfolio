@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" rx="40" fill="#004c8f" />
+  
+  <!-- Outer White Box -->
+  <path d="M 40,160 L 160,40 L 360,40 L 360,360 L 40,360 Z" fill="#f0f0f0" />
+  
+  <!-- Top Right Text -->
+  <text x="200" y="80" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#d3212d">EC-Council</text>
+  
+  <!-- Center CEH Text -->
+  <text x="130" y="210" font-family="Arial, sans-serif" font-weight="900" font-size="90" fill="black">C</text>
+  <rect x="186" y="140" width="6" height="100" fill="#d3212d" />
+  <text x="210" y="210" font-family="Arial, sans-serif" font-weight="900" font-size="90" fill="black">EH</text>
+  
+  <!-- Small text below CEH -->
+  <text x="120" y="240" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="black">Certified</text>
+  <text x="200" y="240" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="black">Ethical</text>
+  <text x="260" y="240" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="black">Hacker</text>
+  
+  <!-- Bottom CERTIFIED text -->
+  <rect x="40" y="280" width="320" height="80" fill="#e0e0e0" rx="20"/>
+  <text x="200" y="330" font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="black" text-anchor="middle" letter-spacing="4">CERTIFIED</text>
+</svg>
